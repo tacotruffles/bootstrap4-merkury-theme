@@ -14,4 +14,4 @@ Thank you to http://symu.co for the original PSD file!
 
 ### Screenshot
 
-![Merkury Theme Screenshot](murkury-theme/assets/img/screenshot-bootstrap4-merkury-theme.png)
+![Merkury Theme Screenshot](merkury-theme/assets/img/screenshot-bootstrap4-merkury-theme.png)
