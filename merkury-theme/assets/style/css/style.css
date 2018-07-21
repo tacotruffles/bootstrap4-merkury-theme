@@ -1,7 +1,39 @@
+/************************ FONTS *****************************/
 /*
 Roboto Family (Regular, Thin, Medium, Bold)
 Monserat Family (Regular, Bold)
 */
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../fonts/Roboto/Roboto-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../fonts/Roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+}
+
+/************************ VARIABLES *************************/
 /*
 Dark Blue: #0D1935
 Light Blue: #5583FF
@@ -9,4 +41,155 @@ Light Grey: #8492AF
 Black: #000000
 White: #FFFFFF
 */
+/************************ GENERAL RESET *********************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+/************************ CUSTOM SETTINGS *******************/
+ol, ul, li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+html {
+  background-color: white;
+  overflow-x: hidden;
+  font-family: "Roboto-Regular", Georgia, serif;
+}
+
+body {
+  background-color: white;
+  overflow: hidden;
+}
+
+section {
+  padding: 50px 0;
+}
+
+p, ul, ol {
+  margin-bottom: 0.5em;
+}
+
+p a, h5 a {
+  font-weight: bold;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/************************ MERKURY THEME CSS3 *******************/
+#main-nav {
+  background-color: transparent;
+  padding-top: 20px;
+  -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+  transition: padding-top 0.3s, padding-bottom 0.3s;
+}
+
+#main-nav .navbar-toggler {
+  padding: 13px;
+  border: 0;
+  color: white;
+}
+
+#main-nav .navbar-brand {
+  margin-right: 0px;
+}
+
+#main-nav .navbar-brand img {
+  width: 70%;
+}
+
+#main-nav .navbar-nav .nav-item .nav-link {
+  font-size: 15px;
+  padding: 7px 10px !important;
+  margin-left: 10px;
+  letter-spacing: 1px;
+  color: white;
+  font-family: "Roboto-Regular", Georgia, serif;
+  border: 3px solid transparent;
+}
+
+#main-nav .navbar-nav .nav-item .nav-link.active, #main-nav .navbar-nav .nav-item .nav-link:hover {
+  color: white !important;
+  background: rgba(85, 131, 255, 0.5);
+  border: 3px solid transparent;
+}
+
+#main-nav .navbar-nav .nav-item #login {
+  padding: 8px 30px !important;
+  background-color: #0D1935;
+  color: #5583FF;
+  border: 1px solid #5583FF;
+  border-radius: 25px;
+}
+
+#main-nav .navbar-nav .nav-item #login:hover {
+  background: #5583FF;
+  color: white !important;
+}
+
+#main-header {
+  background: #0D1935;
+  min-height: 300px;
+}
+
+/************************ MEDIA QUERIES *******************/
+@media (min-width: 300px) {
+  #main-nav.navbar-shrink {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #172c5e;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-nav .nav-item {
+    margin-bottom: 12px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

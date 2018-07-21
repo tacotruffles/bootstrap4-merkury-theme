@@ -1,8 +1,39 @@
+/************************ FONTS *****************************/
 /*
 Roboto Family (Regular, Thin, Medium, Bold)
 Monserat Family (Regular, Bold)
 */
+@font-face {
+   font-family: "Roboto-Regular";
+   src: url("../fonts/Roboto/Roboto-Regular.ttf")
+}
 
+@font-face {
+   font-family: "Roboto-Thin";
+   src: url("../fonts/Roboto/Roboto-Thin.ttf")
+}
+
+@font-face {
+   font-family: "Roboto-Medium";
+   src: url("../fonts/Roboto/Roboto-Medium.ttf")
+}
+
+@font-face {
+   font-family: "Roboto-Bold";
+   src: url("../fonts/Roboto/Roboto-Bold.ttf")
+}
+
+@font-face {
+   font-family: "Montserrat-Regular";
+   src: url("../fonts/Montserrat/Montserrat-Regular.ttf")
+}
+
+@font-face {
+   font-family: "Montserrat-Bold";
+   src: url("../fonts/Montserrat/Montserrat-Bold.ttf")
+}
+
+/************************ VARIABLES *************************/
 /*
 Dark Blue: #0D1935
 Light Blue: #5583FF
@@ -10,3 +41,188 @@ Light Grey: #8492AF
 Black: #000000
 White: #FFFFFF
 */
+
+$color-blue-dark: #0D1935;
+$color-blue-light: #5583FF;
+$color-blue-light-overlay:rgba(85,131,255,.5);
+$color-grey: #8492AF;
+$color-black: black;
+$color-white: white;
+
+$font-roboto: "Roboto-Regular", Georgia, serif;
+$font-roboto-thin: "Roboto-Thin", Arial, sans-serif;
+$font-roboto-medium: "Roboto-Medium", Arial, sans-serif;
+$font-roboto-bold: "Roboto-Bold", Helvetica, Arial, sans-serif;
+$font-montserrat: "Montserrat-Regular", Times, serif;
+$font-montserrat-bold: "Montserrat-Bold", Times, serif;
+
+/************************ GENERAL RESET *********************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+// blockquote, q {
+// 	quotes: none;
+// }
+// blockquote:before, blockquote:after,
+// q:before, q:after {
+// 	content: '';
+// 	content: none;
+// }
+// table {
+// 	border-collapse: collapse;
+// 	border-spacing: 0;
+// }
+
+
+/************************ CUSTOM SETTINGS *******************/
+ol, ul, li {
+	list-style-type: none;
+}
+
+a {
+   text-decoration: none;
+
+   &:hover {
+      text-decoration: none;
+      transition: all 0.3s ease-out;
+   }
+}
+
+html {
+   background-color: $color-white;
+   overflow-x: hidden;
+   font-family: $font-roboto;
+}
+
+body {
+   background-color: $color-white;
+   overflow: hidden;
+}
+
+section {
+   padding: 50px 0;
+}
+
+p,ul,ol {
+   margin-bottom: 0.5em;
+}
+
+p a, h5 a {
+   font-weight: bold;
+   transition: all 0.5s ease-out;
+}
+
+h1,h2,h3,h4,h5 {
+   line-height: 1.5em;
+   margin-bottom: 1.5em;
+}
+/************************ MERKURY THEME CSS3 *******************/
+#main-nav {
+   background-color: transparent;
+   padding-top: 20px;
+   transition: padding-top 0.3s, padding-bottom 0.3s;
+
+   .navbar-toggler {
+      padding: 13px;
+      border: 0;
+      color: $color-white;
+   }
+
+   .navbar-brand {
+      margin-right: 0px;
+
+      img {
+         width: 70%;
+      }
+   }
+
+   .navbar-nav {
+      .nav-item {
+
+         .nav-link {
+            font-size: 15px;
+            padding: 7px 10px !important;
+            margin-left: 10px;
+            letter-spacing: 1px;
+            color: $color-white;
+            font-family: $font-roboto;
+            //border-bottom: 3px solid transparent;
+            border: 3px solid transparent;
+
+            &.active, &:hover {
+               color: $color-white !important;
+               background: $color-blue-light-overlay;
+               border: 3px solid transparent
+               //border-bottom: 3px solid $color-blue-light;
+               //color: $color-blue-light !important;
+            }
+         }
+
+         #login {
+            padding: 8px 30px !important;
+            background-color: $color-blue-dark;
+            color: $color-blue-light;
+            border: 1px solid $color-blue-light;
+            border-radius: 25px;
+
+            &:hover {
+               background: $color-blue-light;
+               color: $color-white !important;
+            }
+         }
+      }
+   }
+}
+
+#main-header {
+   background: $color-blue-dark;
+   min-height: 300px;
+}
+
+/************************ MEDIA QUERIES *******************/
+@media (min-width: 300px) {
+
+   // Scroll FX - Navbar
+   #main-nav.navbar-shrink {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: lighten($color-blue-dark, 10%) 
+   }
+}
+
+@media (max-width: 768px) {
+   #main-nav .nav-item {
+      margin-bottom: 12px; 
+   }
+}
