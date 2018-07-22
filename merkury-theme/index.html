@@ -31,10 +31,10 @@
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                <li class="nav-item">
-                  <a class="nav-link btn" href="#">Features</a>
+                  <a class="nav-link btn" href="#features">Features</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link btn" href="#">Drag-Drop</a>
+                  <a class="nav-link btn" href="#drag-drop">Drag-Drop</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link btn" href="#">Template</a>
@@ -128,9 +128,133 @@
    <section id="drag-drop">
       <div class="container">
          <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
+
+            <div class="col-md-4" id="first-col">
+               <h3>In progress
+                  <span>(3)</span>
+                  <i class="fas fa-angle-right"></i>
+               </h3>
+               <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                     <img src="assets/img/icons/n.png" alt="">
+                     <div class="dropdown">
+                        <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                           <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                     </div>
+                     <h5 class="card-title">New logo for apple</h5>
+                     <p class="card-text text-secondary">
+                        <i class="far fa-clock"></i> 1 day left</p>
+                  </div>
+               </div>
+               <!-- end 1st card -->
+               <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                     <img src="assets/img/icons/d.png" alt="">
+                     <div class="dropdown">
+                        <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                           <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                     </div>
+                     <h5 class="card-title">Daily UI kit</h5>
+                     <p class="card-text text-secondary">
+                        <i class="far fa-clock"></i> 5 days left</p>
+                  </div>
+               </div>
+               <!-- end 2nd card -->
+               <div id="draggable-card" class="card" style="width: 18rem;">
+                  <div class="card-body">
+                     <img src="assets/img/icons/b.png" alt="">
+                     <div class="dropdown">
+                        <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                           <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                     </div>
+                     <h5 class="card-title">Business cards</h5>
+                     <p class="card-text text-danger">
+                        <i class="far fa-clock"></i> 2 days delayed</p>
+                  </div>
+               </div>
+               <!-- end 3rd card -->
+            </div>
+            <!-- end 1st column -->
+            <div class="col-md-4" id="second-col">
+               <h3>Completed
+                  <span>(2)</span>
+               </h3>
+               <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                     <img src="assets/img/icons/f.png" alt="">
+                     <div class="dropdown">
+                        <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                           <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                     </div>
+                     <h5 class="card-title">Free PSD template #1</h5>
+                     <p class="card-text text-success">
+                        <i class="far fa-check-circle"></i> Completed!</p>
+                  </div>
+               </div>
+               <!-- end 1st card -->
+               <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                     <img src="assets/img/icons/i.png" alt="">
+                     <div class="dropdown">
+                        <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                           <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                     </div>
+                     <h5 class="card-title">Iconset vol 1</h5>
+                     <p class="card-text text-success">
+                        <i class="far fa-check-circle"></i> Completed!</p>
+                  </div>
+               </div>
+               <!-- end 2nd card -->
+               <div id="droppable" class="card" style="width: 18rem;">
+                  <div class="card-body">
+                     <h5 class="card-title">Drop here</h5>
+                  </div>
+               </div>
+               <!-- end 3rd card -->
+            </div>
+            <!-- end 2nd column -->
+            <div class="col-md-4" id="third-col">
+               <h2>Drag & drop</h2>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio inventore accusantium iste ea reiciendis libero?</p>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio inventore accusantium iste ea reiciendis libero?</p>
+               <a href="#">
+                  <img src="assets/img/icons/arrow-left.png" alt="">
+               </a>
+               <a href="#">
+                  <img src="assets/img/icons/arrow-right.png" alt="">
+               </a>
+            </div>
+            <!-- end 3rd column -->
          </div>
       </div>
    </section>

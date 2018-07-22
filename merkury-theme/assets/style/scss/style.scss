@@ -215,7 +215,7 @@ h1,h2,h3,h4,h5 {
 
    .container {
       
-      background-image: url('../../img/bg-graph.png');
+      background-image: url('../../img/bg-graph-opaque.png');
       background-repeat: repeat-x;
       background-size: cover;
       animation: animatedGraph 13s linear infinite;
@@ -349,7 +349,7 @@ h1,h2,h3,h4,h5 {
             h2 {
                color: $color-black;
                font-family: $font-roboto-thin;
-               font-size: 50px;
+               font-size: 38px;
                letter-spacing: 1px;
                line-height: 1em;
                margin-bottom: 35px;
@@ -363,10 +363,11 @@ h1,h2,h3,h4,h5 {
 
             span {
                display: flex; // display image and text on same line
+               align-items: center; // align img with span text
+               
                color: $color-blue-light;
                margin-bottom: 20px;
                font-size: 18px;
-               align-items: center;
 
                img {
                   margin-right: 10px;
@@ -377,7 +378,132 @@ h1,h2,h3,h4,h5 {
    }
 }
 
+/************************ DRAG-DROP *******************/
+#drag-drop {
+   background-image: url('../../img/hdr-top.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
 
+   .container {
+      // No Amination
+      padding: 50px 25px;
+      background-image: url('../../img/bg-graph-opaque.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      .row {
+         .col-md-4 {
+            h3 {
+               
+               font-size: 25px;
+               color: $color-white;
+               span {
+                  color: darken($color-white, 40%);
+               }
+
+               i {
+                  float: right;
+                  margin-top: 5px;
+               }
+            }
+
+            // UI Card Mockups
+            .card {
+               border-radius: 0;
+               margin-bottom: 20px;
+
+               .card-body {
+                  padding: 12px;
+                  
+                  img { // TODO: replace with span and flex boxes
+                     float: left;
+                     margin-right: 15px;
+                  }
+
+                  .dropdown {
+                    float: right;
+                    
+                    .btn-secondary {
+                       background: transparent;
+                       color: $color-grey;
+                       border: none;
+                    }
+
+                    .dropdown-menu {
+                       a:hover {
+                          cursor: pointer;
+                          background: $color-blue-light;
+                          color: white;
+                       }
+                    }
+                  }
+
+                  .card-title {
+                     font-family: $font-roboto-bold;
+                     margin-bottom: 6px;
+                     margin-left: 41px;
+                  }
+
+                  .card-text {
+                     font-size: .8em;
+                  }
+               }
+            }
+
+            &#first-col {
+               #draggable-card {
+                  cursor: move;
+               }
+            }
+
+            &#second-col {
+               #droppable {
+                  
+                  .card-title {
+                     margin: 0px;
+                     padding: 0px;
+                  }
+
+                  padding: 9px;
+                  border: 1px dashed $color-grey;
+                  background: transparent;
+                  color: $color-grey; //darken($color-white, 40%);
+                  text-align: center;
+                  margin: 0px;
+               }
+            }
+
+            &#third-col {
+               margin-top: 80px;
+               color: $color-white;
+
+               h2 {
+                  font-family: $font-roboto-thin;
+                  letter-spacing: 1px;
+                  line-height: .5em;
+                  margin-bottom: 25px;
+                  font-size: 35px;
+               }
+
+               p{
+                  font-family: $font-roboto-thin;
+                  color: darken($color-white, 40%);
+                  margin-bottom: 20px;
+               }
+
+               a {
+                  float: left;
+                  margin-right: 20px;
+               }
+
+            }
+         }
+      }
+
+   }
+}
 /************************ MEDIA QUERIES *******************/
 @media (min-width: 300px) {
 

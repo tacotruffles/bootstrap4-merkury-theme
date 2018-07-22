@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5 {
 }
 
 #main-header .container {
-  background-image: url("../../img/bg-graph.png");
+  background-image: url("../../img/bg-graph-opaque.png");
   background-repeat: repeat-x;
   background-size: cover;
   -webkit-animation: animatedGraph 13s linear infinite;
@@ -312,7 +312,7 @@ h1, h2, h3, h4, h5 {
 #features .container .row .col-md-5 h2 {
   color: black;
   font-family: "Roboto-Thin", Arial, sans-serif;
-  font-size: 50px;
+  font-size: 38px;
   letter-spacing: 1px;
   line-height: 1em;
   margin-bottom: 35px;
@@ -328,16 +328,128 @@ h1, h2, h3, h4, h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #5583FF;
-  margin-bottom: 20px;
-  font-size: 18px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #5583FF;
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 
 #features .container .row .col-md-5 span img {
   margin-right: 10px;
+}
+
+/************************ DRAG-DROP *******************/
+#drag-drop {
+  background-image: url("../../img/hdr-top.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#drag-drop .container {
+  padding: 50px 25px;
+  background-image: url("../../img/bg-graph-opaque.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#drag-drop .container .row .col-md-4 h3 {
+  font-size: 25px;
+  color: white;
+}
+
+#drag-drop .container .row .col-md-4 h3 span {
+  color: #999999;
+}
+
+#drag-drop .container .row .col-md-4 h3 i {
+  float: right;
+  margin-top: 5px;
+}
+
+#drag-drop .container .row .col-md-4 .card {
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+
+#drag-drop .container .row .col-md-4 .card .card-body {
+  padding: 12px;
+}
+
+#drag-drop .container .row .col-md-4 .card .card-body img {
+  float: left;
+  margin-right: 15px;
+}
+
+#drag-drop .container .row .col-md-4 .card .card-body .dropdown {
+  float: right;
+}
+
+#drag-drop .container .row .col-md-4 .card .card-body .dropdown .btn-secondary {
+  background: transparent;
+  color: #8492AF;
+  border: none;
+}
+
+#drag-drop .container .row .col-md-4 .card .card-body .dropdown .dropdown-menu a:hover {
+  cursor: pointer;
+  background: #5583FF;
+  color: white;
+}
+
+#drag-drop .container .row .col-md-4 .card .card-body .card-title {
+  font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
+  margin-bottom: 6px;
+  margin-left: 41px;
+}
+
+#drag-drop .container .row .col-md-4 .card .card-body .card-text {
+  font-size: .8em;
+}
+
+#drag-drop .container .row .col-md-4#first-col #draggable-card {
+  cursor: move;
+}
+
+#drag-drop .container .row .col-md-4#second-col #droppable {
+  padding: 9px;
+  border: 1px dashed #8492AF;
+  background: transparent;
+  color: #8492AF;
+  text-align: center;
+  margin: 0px;
+}
+
+#drag-drop .container .row .col-md-4#second-col #droppable .card-title {
+  margin: 0px;
+  padding: 0px;
+}
+
+#drag-drop .container .row .col-md-4#third-col {
+  margin-top: 80px;
+  color: white;
+}
+
+#drag-drop .container .row .col-md-4#third-col h2 {
+  font-family: "Roboto-Thin", Arial, sans-serif;
+  letter-spacing: 1px;
+  line-height: .5em;
+  margin-bottom: 25px;
+  font-size: 35px;
+}
+
+#drag-drop .container .row .col-md-4#third-col p {
+  font-family: "Roboto-Thin", Arial, sans-serif;
+  color: #999999;
+  margin-bottom: 20px;
+}
+
+#drag-drop .container .row .col-md-4#third-col a {
+  float: left;
+  margin-right: 20px;
 }
 
 /************************ MEDIA QUERIES *******************/
