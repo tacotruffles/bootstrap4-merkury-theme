@@ -1,6 +1,6 @@
 # bootstrap4-merkury-theme
 
-A demo bootstrap 4 theme created from a layered Photoshop (PSD) file using SASS and CSS3 animation. Thank you to http://symu.co for the original PSD file!
+A demo bootstrap 4 theme created from a layered Photoshop (PSD) file using SASS, CSS3 animation, and some jQuery to create a more interactive experience from an otherwise static design. Thank you to http://symu.co for the original PSD file!
 
 ### Colors:
 ```
