@@ -1,6 +1,6 @@
 # bootstrap4-merkury-theme
 
-Thank you to http://symu.co for the original PSD file!
+A demo bootstrap 4 theme created from a layered Photoshop (PSD) file using SASS and CSS3 animation. Thank you to http://symu.co for the original PSD file!
 
 ### Colors:
 ```
@@ -19,7 +19,7 @@ Monserat Family (Regular, Bold)
 
 ### See it in action
 
-TODO...YouTube image -> Youtube video
+TODO...YouTube thumbnail -> Youtube video
 
 ### Screenshot
 
