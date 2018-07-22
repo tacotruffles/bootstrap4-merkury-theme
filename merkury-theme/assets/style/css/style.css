@@ -242,9 +242,67 @@ h1, h2, h3, h4, h5 {
   border: 1px solid #5583FF;
 }
 
+#services {
+  padding: 100px 0 50px 0;
+  background-color: white;
+  margin-top: -120px;
+}
+
+#services .container {
+  margin-top: 100px;
+}
+
+#services .container .row .col-md-4 img {
+  height: 85px;
+  margin-bottom: 30px;
+}
+
+#services .container .row .col-md-4 img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+#services .container .row .col-md-4 h4 {
+  font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+#services .container .row .col-md-4 p {
+  color: #b2bbcd;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+}
+
+#services .container .row .col-md-4 a {
+  color: black;
+  border: 1px solid #cccccc;
+  border-radius: 25px;
+  width: 70%;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+#services .container .row .col-md-4 a:hover {
+  background: #cccccc;
+}
+
+#services .container .row .col-md-4 #service-1:after, #services .container .row .col-md-4 #service-2:after {
+  content: "";
+  position: absolute;
+  right: -60px;
+  top: 50px;
+  width: 10vw;
+  height: 1px;
+  background-attachment: fixed;
+  background-color: #e1e4eb;
+}
+
 /************************ MEDIA QUERIES *******************/
 @media (min-width: 300px) {
-  #main-nav .navbar-shrink {
+  #main-nav.navbar-shrink {
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: #172c5e;
@@ -254,6 +312,12 @@ h1, h2, h3, h4, h5 {
 @media (max-width: 768px) {
   #main-nav .nav-item {
     margin-bottom: 12px;
+  }
+  #services #service-1:after, #services #service-2:after {
+    display: none;
+  }
+  #services a {
+    margin-bottom: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */

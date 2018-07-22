@@ -148,6 +148,8 @@ h1,h2,h3,h4,h5 {
    margin-bottom: 1.5em;
 }
 /************************ MERKURY THEME CSS3 *******************/
+
+// NAVBAR
 #main-nav {
    background-color: transparent;
    padding-top: 20px;
@@ -202,6 +204,7 @@ h1,h2,h3,h4,h5 {
    }
 }
 
+// HEADER
 #main-header {
    color: $color-white;
    background: $color-blue-dark;
@@ -269,13 +272,79 @@ h1,h2,h3,h4,h5 {
    }
 }
 
+// SERVICES
+#services {
+   padding: 100px 0 50px 0;
+   background-color: $color-white;
+   margin-top: -120px;
+
+   .container {
+      margin-top: 100px;
+
+      .row {
+         .col-md-4 {
+            img {
+               height: 85px;
+               margin-bottom: 30px;
+
+               &:hover {
+                  transform: scale(1.1);
+                  transition: all 0.2s ease-out;
+               }
+            }
+         
+            h4 {
+               font-family: $font-roboto-bold;
+               font-weight: 400;
+               text-transform: capitalize;
+            }  
+         
+            p {
+               color: lighten($color-grey, 15%);
+               line-height: 1.5em;
+               margin-bottom: 20px;
+            }
+         
+            a {
+               color: $color-black;
+               border: 1px solid darken($color-white, 20%);
+               border-radius: 25px;
+               width: 70%;
+               text-transform: capitalize;
+               margin-bottom: 20px;
+
+               &:hover {
+                  background: darken($color-white, 20%);
+               }
+            }
+
+            // Strokes
+            #service-1:after, #service-2:after {
+               content: "";
+               position: absolute;
+               right: -60px;
+               top: 50px;
+               width: 10vw; //1 = 1% of view port width;
+               height: 1px;
+               background-attachment: fixed;
+               background-color: lighten($color-grey, 30%);
+            }
+         }
+      }
+
+   }
+
+   
+}
+
+
 /************************ MEDIA QUERIES *******************/
 @media (min-width: 300px) {
 
    // Scroll FX - Navbar
    #main-nav {
       
-      .navbar-shrink {
+      &.navbar-shrink {
          padding-top: 5px;
          padding-bottom: 5px;
          background-color: lighten($color-blue-dark, 10%) 
@@ -286,5 +355,16 @@ h1,h2,h3,h4,h5 {
 @media (max-width: 768px) {
    #main-nav .nav-item {
       margin-bottom: 12px; 
+   }
+
+   // hide strokes between service icons on small screens
+   #services {
+      #service-1:after, #service-2:after {
+         display: none;
+      }
+
+      a {
+         margin-bottom: 40px;
+      }
    }
 }
