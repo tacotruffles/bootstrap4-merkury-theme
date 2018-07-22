@@ -19,8 +19,8 @@ Monserat Family (Regular, Bold)
 
 ### See it in action
 
-TODO: Live Preview Site
-TODO: YouTube thumbnail -> Youtube video
+- TODO: Live Preview Site
+- TODO: YouTube thumbnail -> Youtube video
 
 ### Screenshot
 
