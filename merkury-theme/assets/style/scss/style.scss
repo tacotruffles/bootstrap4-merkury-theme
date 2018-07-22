@@ -5,32 +5,32 @@ Monserat Family (Regular, Bold)
 */
 @font-face {
    font-family: "Roboto-Regular";
-   src: url("../fonts/Roboto/Roboto-Regular.ttf")
+   src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
    font-family: "Roboto-Thin";
-   src: url("../fonts/Roboto/Roboto-Thin.ttf")
+   src: url("../fonts/Roboto/Roboto-Thin.ttf");
 }
 
 @font-face {
    font-family: "Roboto-Medium";
-   src: url("../fonts/Roboto/Roboto-Medium.ttf")
+   src: url("../fonts/Roboto/Roboto-Medium.ttf");
 }
 
 @font-face {
    font-family: "Roboto-Bold";
-   src: url("../fonts/Roboto/Roboto-Bold.ttf")
+   src: url("../fonts/Roboto/Roboto-Bold.ttf");
 }
 
 @font-face {
    font-family: "Montserrat-Regular";
-   src: url("../fonts/Montserrat/Montserrat-Regular.ttf")
+   src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
 }
 
 @font-face {
    font-family: "Montserrat-Bold";
-   src: url("../fonts/Montserrat/Montserrat-Bold.ttf")
+   src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
 }
 
 /************************ VARIABLES *************************/
@@ -49,12 +49,12 @@ $color-grey: #8492AF;
 $color-black: black;
 $color-white: white;
 
-$font-roboto: "Roboto-Regular", Georgia, serif;
-$font-roboto-thin: "Roboto-Thin", Arial, sans-serif;
-$font-roboto-medium: "Roboto-Medium", Arial, sans-serif;
-$font-roboto-bold: "Roboto-Bold", Helvetica, Arial, sans-serif;
-$font-montserrat: "Montserrat-Regular", Times, serif;
-$font-montserrat-bold: "Montserrat-Bold", Times, serif;
+$font-roboto: "Roboto-Regular",Georgia,serif;
+$font-roboto-thin: "Roboto-Thin",Arial,sans-serif;
+$font-roboto-medium: "Roboto-Medium",Arial,sans-serif;
+$font-roboto-bold: "Roboto-Bold",Helvetica,Arial,sans-serif;
+$font-montserrat: "Montserrat-Regular",Times,serif;
+$font-montserrat-bold: "Montserrat-Bold",Times,serif;
 
 /************************ GENERAL RESET *********************/
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -177,15 +177,12 @@ h1,h2,h3,h4,h5 {
             letter-spacing: 1px;
             color: $color-white;
             font-family: $font-roboto;
-            //border-bottom: 3px solid transparent;
             border: 3px solid transparent;
 
             &.active, &:hover {
                color: $color-white !important;
                background: $color-blue-light-overlay;
                border: 3px solid transparent
-               //border-bottom: 3px solid $color-blue-light;
-               //color: $color-blue-light !important;
             }
          }
 
@@ -206,18 +203,83 @@ h1,h2,h3,h4,h5 {
 }
 
 #main-header {
+   color: $color-white;
    background: $color-blue-dark;
-   min-height: 300px;
+   background-image: url('../../img/hdr-top.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+
+   .container {
+      
+      background-image: url('../../img/bg-graph.png');
+      background-repeat: repeat-x;
+      background-size: cover;
+      animation: animatedGraph 13s linear infinite;
+      
+      @keyframes animatedGraph {
+         from {
+            background-position: 0% 0px; // start from the right
+            
+         }
+         to {
+            background-position: 100% 0px; // move left all the way
+         }
+      }
+
+      .intro-text {
+
+         padding-top: 150px;
+
+         h1 {
+            font-family: $font-roboto-thin;
+            font-size: 40px;
+            text-transform: capitalize;
+            line-height: 45px;
+            margin-bottom: 25px;
+
+         }
+
+         h3 {
+            color: darken($color-white, 25%);
+            font-size: 30px;
+            font-family: $font-roboto;
+            font-weight: 400;
+            margin-bottom: 35px;
+         }
+
+         a {
+            padding: 8px 34px;
+            color: $color-white;
+            background-color: $color-blue-light;
+            border-radius: 25px;
+            text-transform: capitalize;
+
+            &:hover {
+               color: $color-blue-light;
+               background-color: transparent;
+               border: 1px solid $color-blue-light;
+            }
+         }
+
+         img {
+
+         }
+      }
+   }
 }
 
 /************************ MEDIA QUERIES *******************/
 @media (min-width: 300px) {
 
    // Scroll FX - Navbar
-   #main-nav.navbar-shrink {
-      padding-top: 5px;
-      padding-bottom: 5px;
-      background-color: lighten($color-blue-dark, 10%) 
+   #main-nav {
+      
+      .navbar-shrink {
+         padding-top: 5px;
+         padding-bottom: 5px;
+         background-color: lighten($color-blue-dark, 10%) 
+      }
    }
 }
 
