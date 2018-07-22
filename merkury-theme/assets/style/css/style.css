@@ -453,6 +453,102 @@ h1, h2, h3, h4, h5 {
 }
 
 /************************ MEDIA QUERIES *******************/
+#template {
+  padding: 100px 0px;
+  background: #f2f2f2;
+}
+
+#template .container .row p {
+  font-size: 16px;
+  color: #a3adc3;
+}
+
+#template .container .row .col h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  font-family: "Roboto-Thin", Arial, sans-serif;
+}
+
+#template .container .row .col p.lead {
+  margin-bottom: 20px;
+}
+
+#template .container .row .col p.lead:last-child {
+  margin-bottom: 100px;
+}
+
+#template .container .row .col-md-3 h5 {
+  font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+#template .container .row .col-md-6 img {
+  -webkit-animation: floatDashboard 9s ease-out infinite;
+          animation: floatDashboard 9s ease-out infinite;
+}
+
+@-webkit-keyframes floatDashboard {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes floatDashboard {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+#template .container #left-side::before {
+  content: "";
+  width: 0px;
+  height: 47px;
+  background: url("../../img/fx-line-right.png") no-repeat;
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  -webkit-transform: scalex(-1);
+          transform: scalex(-1);
+  z-index: 1;
+}
+
+#template .container #right-side::before {
+  content: "";
+  width: 0;
+  height: 47px;
+  background: url("../../img/fx-line-right.png") no-repeat;
+  position: absolute;
+  top: 12px;
+  right: 15px;
+}
+
+#template .container:hover #left-side::before,
+#template .container:hover #right-side::before {
+  width: 46vw;
+  -webkit-transition: width 1.5s ease-out;
+  transition: width 1.5s ease-out;
+}
+
+/************************ MEDIA QUERIES *******************/
 @media (min-width: 300px) {
   #main-nav.navbar-shrink {
     padding-top: 5px;

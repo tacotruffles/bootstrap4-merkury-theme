@@ -62,6 +62,7 @@ $(document).ready(function() {
           .html('<i class="far fa-check-circle"></i> Completed!')
           .removeClass("text-danger")
           .addClass("text-success");
+        $("#first-col h3 span").html("(2)");
         $("#second-col h3 span").html("(3)");
         $("#droppable")
           .css({ top: 0, left: 0 })
