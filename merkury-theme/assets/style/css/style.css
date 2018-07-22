@@ -356,65 +356,65 @@ h1, h2, h3, h4, h5 {
   background-position: center center;
 }
 
-#drag-drop .container .row .col-md-4 h3 {
+#drag-drop .container .row .col-lg-4 h3 {
   font-size: 25px;
   color: white;
 }
 
-#drag-drop .container .row .col-md-4 h3 span {
+#drag-drop .container .row .col-lg-4 h3 span {
   color: #999999;
 }
 
-#drag-drop .container .row .col-md-4 h3 i {
+#drag-drop .container .row .col-lg-4 h3 i {
   float: right;
   margin-top: 5px;
 }
 
-#drag-drop .container .row .col-md-4 .card {
+#drag-drop .container .row .col-lg-4 .card {
   border-radius: 0;
   margin-bottom: 20px;
 }
 
-#drag-drop .container .row .col-md-4 .card .card-body {
+#drag-drop .container .row .col-lg-4 .card .card-body {
   padding: 12px;
 }
 
-#drag-drop .container .row .col-md-4 .card .card-body img {
+#drag-drop .container .row .col-lg-4 .card .card-body img {
   float: left;
   margin-right: 15px;
 }
 
-#drag-drop .container .row .col-md-4 .card .card-body .dropdown {
+#drag-drop .container .row .col-lg-4 .card .card-body .dropdown {
   float: right;
 }
 
-#drag-drop .container .row .col-md-4 .card .card-body .dropdown .btn-secondary {
+#drag-drop .container .row .col-lg-4 .card .card-body .dropdown .btn-secondary {
   background: transparent;
   color: #8492AF;
   border: none;
 }
 
-#drag-drop .container .row .col-md-4 .card .card-body .dropdown .dropdown-menu a:hover {
+#drag-drop .container .row .col-lg-4 .card .card-body .dropdown .dropdown-menu a:hover {
   cursor: pointer;
   background: #5583FF;
   color: white;
 }
 
-#drag-drop .container .row .col-md-4 .card .card-body .card-title {
+#drag-drop .container .row .col-lg-4 .card .card-body .card-title {
   font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
   margin-bottom: 6px;
   margin-left: 41px;
 }
 
-#drag-drop .container .row .col-md-4 .card .card-body .card-text {
+#drag-drop .container .row .col-lg-4 .card .card-body .card-text {
   font-size: .8em;
 }
 
-#drag-drop .container .row .col-md-4#first-col #draggable-card {
+#drag-drop .container .row .col-lg-4#first-col #draggable-card {
   cursor: move;
 }
 
-#drag-drop .container .row .col-md-4#second-col #droppable {
+#drag-drop .container .row .col-lg-4#second-col #droppable {
   padding: 9px;
   border: 1px dashed #8492AF;
   background: transparent;
@@ -423,17 +423,17 @@ h1, h2, h3, h4, h5 {
   margin: 0px;
 }
 
-#drag-drop .container .row .col-md-4#second-col #droppable .card-title {
+#drag-drop .container .row .col-lg-4#second-col #droppable .card-title {
   margin: 0px;
   padding: 0px;
 }
 
-#drag-drop .container .row .col-md-4#third-col {
+#drag-drop .container .row .col-lg-4#third-col {
   margin-top: 80px;
   color: white;
 }
 
-#drag-drop .container .row .col-md-4#third-col h2 {
+#drag-drop .container .row .col-lg-4#third-col h2 {
   font-family: "Roboto-Thin", Arial, sans-serif;
   letter-spacing: 1px;
   line-height: .5em;
@@ -441,13 +441,13 @@ h1, h2, h3, h4, h5 {
   font-size: 35px;
 }
 
-#drag-drop .container .row .col-md-4#third-col p {
+#drag-drop .container .row .col-lg-4#third-col p {
   font-family: "Roboto-Thin", Arial, sans-serif;
   color: #999999;
   margin-bottom: 20px;
 }
 
-#drag-drop .container .row .col-md-4#third-col a {
+#drag-drop .container .row .col-lg-4#third-col a {
   float: left;
   margin-right: 20px;
 }

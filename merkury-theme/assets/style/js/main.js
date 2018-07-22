@@ -14,7 +14,6 @@ $(document).ready(function() {
 
   // Adjust/Animate Navbar upon initial scroll depth past 50 pixels
   $(window).scroll(function() {
-    console.log("..");
     if ($("#main-nav").offset().top > 50) {
       $("#main-nav").addClass("navbar-shrink");
     } else {
@@ -45,5 +44,30 @@ $(document).ready(function() {
         }
       );
     }
+  });
+
+  // Draggable UI elements
+  $(function() {
+    // Draggable Item with Snap Config
+    $("#draggable-card").draggable({
+      snap: "#droppable",
+      snapMode: "inner"
+    });
+
+    // Target Drop with some touchup
+    $("#droppable").droppable({
+      drop: function(ev, ui) {
+        $(".card").css("border", "transparent");
+        $("#draggable-card .card-text")
+          .html('<i class="far fa-check-circle"></i> Completed!')
+          .removeClass("text-danger")
+          .addClass("text-success");
+        $("#second-col h3 span").html("(3)");
+        $("#droppable")
+          .css({ top: 0, left: 0 })
+          .find(".card-title")
+          .html("");
+      }
+    });
   });
 });
