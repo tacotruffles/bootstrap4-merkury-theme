@@ -337,6 +337,46 @@ h1,h2,h3,h4,h5 {
    
 }
 
+/************************ FEATURES *******************/
+#features {
+   background: $color-white;
+
+   .container {
+      .row {
+         .col-md-5 {
+            margin-top: 100px;
+
+            h2 {
+               color: $color-black;
+               font-family: $font-roboto-thin;
+               font-size: 50px;
+               letter-spacing: 1px;
+               line-height: 1em;
+               margin-bottom: 35px;
+            }
+
+            p {
+               font-family: $font-roboto;
+               color: lighten($color-grey, 10%);
+               margin-bottom: 30px;
+            }
+
+            span {
+               display: flex; // display image and text on same line
+               color: $color-blue-light;
+               margin-bottom: 20px;
+               font-size: 18px;
+               align-items: center;
+
+               img {
+                  margin-right: 10px;
+               }
+            }
+         }
+      }
+   }
+}
+
 
 /************************ MEDIA QUERIES *******************/
 @media (min-width: 300px) {
