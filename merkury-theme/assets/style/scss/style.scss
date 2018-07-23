@@ -750,19 +750,85 @@ footer {
    }
 }
 
+// Portrait Mobile Phones
 @media (max-width: 768px) {
-   #main-nav .nav-item {
-      margin-bottom: 12px; 
+   #main-nav {
+
+      background-color: $color-blue-dark;
+
+      .nav-item {
+        margin-bottom: 12px; 
+      }
+
+      .navbar-toggler {
+        padding: 0px;
+      }
    }
 
+   header {
+     .intro-text {
+       
+       h1 {
+         font-size: 30px !important;
+       }
+
+       h3 {
+         font-size: 20px !important;
+       }
+     }
+   }
+
+   #services, #template, #features {
+     padding-bottom: 0px;
+   }
+
+   #features {
+
+      padding-top: 75px;
+
+     .col-md-5 {
+        margin-top: 10px !important;  
+     }
+   }
    // hide strokes between service icons on small screens
    #services {
+
       #service-1:after, #service-2:after {
-         display: none;
+         display: none !important;
       }
 
       a {
          margin-bottom: 40px;
       }
    }
+
+   #drag-drop .container .row h3 {
+     i {
+       display: none !important;
+     }
+   }
+
+   #template .container .row .col-md-6 {
+     margin-top: 25px;
+     margin-bottom: -25px;
+   }
+
+   footer {
+     padding: 5px;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #template .container:hover #left-side::before {
+    width: 42vw;
+    top: 40px;
+  } 
+  #template .container:hover #right-side::before {
+    width: 36vw;
+    //top: 25px;
+  }
+
+  #pricing .row .col-md-4 .card {
+    width: 110% !important;
+  }
 }

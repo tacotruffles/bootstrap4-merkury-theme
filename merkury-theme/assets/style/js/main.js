@@ -1,6 +1,9 @@
 $(document).ready(function() {
   /******** NAVIGATION ********/
-
+  // Refresh glitch - .navbar-shrink not set.
+  if ($("#main-nav").offset().top > 50) {
+    $("#main-nav").addClass("navbar-shrink");
+  }
   // Hide responsive navar upon nav-item click
   $(".nav-link, .navbar-brand").click(function() {
     $(".navbar-collapse").collapse("hide");
