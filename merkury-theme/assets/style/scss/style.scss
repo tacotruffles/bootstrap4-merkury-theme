@@ -23,16 +23,6 @@ Monserat Family (Regular, Bold)
    src: url("../fonts/Roboto/Roboto-Bold.ttf");
 }
 
-@font-face {
-   font-family: "Montserrat-Regular";
-   src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
-}
-
-@font-face {
-   font-family: "Montserrat-Bold";
-   src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
-}
-
 /************************ VARIABLES *************************/
 /*
 Dark Blue: #0D1935
@@ -53,8 +43,6 @@ $font-roboto: "Roboto-Regular",Georgia,serif;
 $font-roboto-thin: "Roboto-Thin",Arial,sans-serif;
 $font-roboto-medium: "Roboto-Medium",Arial,sans-serif;
 $font-roboto-bold: "Roboto-Bold",Helvetica,Arial,sans-serif;
-$font-montserrat: "Montserrat-Regular",Times,serif;
-$font-montserrat-bold: "Montserrat-Bold",Times,serif;
 
 /************************ GENERAL RESET *********************/
 /* http://meyerweb.com/eric/tools/css/reset/ 
