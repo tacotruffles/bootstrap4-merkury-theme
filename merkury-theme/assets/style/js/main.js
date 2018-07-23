@@ -74,4 +74,44 @@ $(document).ready(function() {
       }
     });
   });
+
+  // Init Scroll Reveal
+  window.sr = ScrollReveal();
+  sr.reveal("#features-dashboard-group", {
+    origin: "right",
+    duration: 2000,
+    distance: "100px",
+    mobile: true,
+    viewFactor: 0.2
+  });
+
+  sr.reveal("#template-img", {
+    origin: "bottom",
+    duration: 3000,
+    mobile: true,
+    viewFactor: 0.2
+  });
+
+  sr.reveal("#price-1", {
+    origin: "bottom",
+    duration: 1000,
+    distance: "100px",
+    viewFactor: 0.2
+  });
+
+  sr.reveal("#price-2", {
+    origin: "bottom",
+    delay: 500,
+    duration: 1000,
+    distance: "100px",
+    viewFactor: 0.2
+  });
+
+  sr.reveal("#price-3", {
+    origin: "bottom",
+    delay: 1000,
+    duration: 1000,
+    distance: "100px",
+    viewFactor: 0.2
+  });
 });
