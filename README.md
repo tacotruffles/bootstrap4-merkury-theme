@@ -19,9 +19,10 @@ Monserat Family (Regular, Bold)
 
 ### See it in action
 
-- TODO: Live Preview Site
+- Live Preview Site: https://tacotruffles.github.io/bootstrap4-merkury-theme/merkury-theme
+
 - TODO: YouTube thumbnail -> Youtube video
 
-### Screenshot
+### Screenshot PSD Layout File
 
 ![Merkury Theme Screenshot](merkury-theme/assets/img/screenshot-bootstrap4-merkury-theme.png)
